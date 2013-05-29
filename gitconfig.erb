@@ -1,20 +1,19 @@
 [user]
-	name = <%= print("Your Name: "); STDOUT.flush; STDIN.gets.chomp %>
-	email = <%= print("Your Email: "); STDOUT.flush; STDIN.gets.chomp %>
+	email = tmangner@inoxio.de
+	name = Torsten Mangner
 [alias]
+	st = status --short
+	ci = commit -v
 	co = checkout
+	br = branch
+	lg = log --color --graph --pretty=format:'%C(bold blue)%h%C(reset) - %C(bold green)%cr%C(reset) %s %C(bold white)— %an%C(yellow)%d' --abbrev-commit
 [color]
-	diff = auto
-	status = auto
-	branch = auto
+	ui = always
 [core]
 	excludesfile = <%= ENV['HOME'] %>/.gitignore
-	editor = mate -w
 	autocrlf = input
+	editor = subl -w
 [apply]
 	whitespace = nowarn
 [format]
 	pretty = %C(yellow)%h%Creset %s %C(red)(%an, %cr)%Creset
-[github]
-	user = <%= print("GitHub Username: "); STDOUT.flush; STDIN.gets.chomp %>
-	token = <%= print("GitHub API Token: "); STDOUT.flush; STDIN.gets.chomp %>
