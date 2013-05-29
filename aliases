@@ -1,0 +1,14 @@
+# GIT
+# even though the git plugin of oh-my-zsh brings these, i have to tweak them:
+alias gst='git status --short'
+alias gup='git smart-pull'
+alias gm='git smart-merge'
+alias gl='git smart-log'
+
+# FASTER GREP
+alias grep="/usr/local/bin/grep"
+
+
+# MYSQL
+alias mysql-start="sudo -u mysql -b /usr/local/mysql/bin/mysqld_safe"
+alias mysql-stop="mysqladmin -u root -p shutdown"
