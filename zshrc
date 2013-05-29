@@ -8,6 +8,7 @@ export EDITOR='subl -w'
 
 source $ZSH/oh-my-zsh.sh
 source ~/.aliases
+source ~/.completions
 
 # for Homebrew installed rbenv
 # if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi

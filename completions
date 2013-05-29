@@ -1,0 +1,19 @@
+# code dir
+c() { cd ~/code/$1; }
+_c() { _files -W ~/code -/; }
+compdef _c c
+
+# rails dir
+cr() { cd ~/code/rails/$1; }
+_cr() { _files -W ~/code/rails -/; }
+compdef _cr cr
+
+# lhotse dir
+ocd() { cd ~/code/java/$1; }
+_ocd() { _files -W ~/code/java -/; }
+compdef _ocd ocd
+
+# home dir
+h() { cd ~/$1; }
+_h() { _files -W ~/ -/; }
+compdef _h h
