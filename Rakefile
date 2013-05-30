@@ -6,7 +6,7 @@ task :install do
   install_oh_my_zsh
   switch_to_zsh
   replace_all = false
-  files = Dir['*'] - %w[Rakefile README.rdoc LICENSE oh-my-zsh ssh]
+  files = Dir['*'] - %w[Rakefile README.md LICENSE oh-my-zsh ssh]
   files << Dir['oh-my-zsh/custom/*']
   files << Dir['ssh/*']
   files.flatten.each do |file|
