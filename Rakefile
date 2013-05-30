@@ -6,10 +6,10 @@ task :install do
   install_oh_my_zsh
   switch_to_zsh
   replace_all = false
-  files = Dir['*'] - %w[Rakefile README.rdoc LICENSE oh-my-zsh]
-#  files << "oh-my-zsh/custom/plugins/rbates"
-  files << "oh-my-zsh/custom/diegofrings.zsh-theme"
-  files.each do |file|
+  files = Dir['*'] - %w[Rakefile README.rdoc LICENSE oh-my-zsh ssh]
+  files << Dir['oh-my-zsh/custom/*']
+  files << Dir['ssh/*']
+  files.flatten.each do |file|
     system %Q{mkdir -p "$HOME/.#{File.dirname(file)}"} if file =~ /\//
     if File.exist?(File.join(ENV['HOME'], ".#{file.sub(/\.erb$/, '')}"))
       if File.identical? file, File.join(ENV['HOME'], ".#{file.sub(/\.erb$/, '')}")
