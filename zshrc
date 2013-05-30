@@ -11,6 +11,9 @@ source ~/.aliases
 source ~/.completions
 source ~/.functions
 
+# autocorrect is more annoying than helpful
+unsetopt correct_all
+
 # for Homebrew installed rbenv
 # if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
