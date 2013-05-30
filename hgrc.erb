@@ -1,0 +1,27 @@
+[ui]
+username = Torsten Mangner <tmangner@inoxio.de>
+editor = subl -w
+
+[auth]
+rhodecode.prefix = https://code.inoxio.de/
+rhodecode.username = tmangner
+rhodecode.password = <%= print("Your rhodecode password: "); STDOUT.flush; STDIN.gets.chomp %>
+
+[web]
+cacerts = /etc/hg-dummy-cert.pem
+
+[color]
+status.modified = magenta bold
+status.added = green bold
+status.removed = red bold
+status.deleted = cyan bold
+status.unknown = blue bold
+status.ignored = black bold
+
+[pager]
+pager = LESS='FRX' less
+
+[extensions]
+prompt = ~/bin/hg-prompt/prompt.py
+color =
+pager =
