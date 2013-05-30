@@ -6,24 +6,30 @@ Host pi rasp raspberry raspbmc
 
 Host ds snoopy
   HostName datenschleuder.org
+  ForwardAgent yes
 
 Host ds! snoopy!
   HostName datenschleuder.org
   User root
+  ForwardAgent yes
 
 Host iw woodstock
   HostName woodstock.inoxio.de
+  ForwardAgent yes
 
 Host iw! woodstock!
   HostName woodstock.inoxio.de
   User root
+  ForwardAgent yes
 
 Host is schroeder
   HostName schroeder.inoxio.de
+  ForwardAgent yes
 
 Host is! schroeder!
   HostName schroeder.inoxio.de
   User root
+  ForwardAgent yes
 
 Host sol
   HostName sol
