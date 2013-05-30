@@ -1,0 +1,30 @@
+Host pi rasp raspberry raspbmc
+  HostName raspbmc
+  User pi
+  ForwardAgent yes
+  CheckHostIP false
+
+Host ds snoopy
+  HostName datenschleuder.org
+
+Host ds! snoopy!
+  HostName datenschleuder.org
+  User root
+
+Host iw woodstock
+  HostName woodstock.inoxio.de
+
+Host iw! woodstock!
+  HostName woodstock.inoxio.de
+  User root
+
+Host is schroeder
+  HostName schroeder.inoxio.de
+
+Host is! schroeder!
+  HostName schroeder.inoxio.de
+  User root
+
+Host sol
+  HostName sol
+  User admin
