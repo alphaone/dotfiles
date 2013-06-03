@@ -1,0 +1,8 @@
+# homebrew coreutils
+export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
+
+export PATH="/usr/local/bin:$PATH"
+export PATH="$HOME/bin:$PATH"
+
+# Add RVM to PATH for scripting
+export PATH="$PATH:$HOME/.rvm/bin" 

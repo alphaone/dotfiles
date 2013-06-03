@@ -1,5 +1,5 @@
 # LISTING
-alias ls='gls -h --color --time-style=long-iso --block-size=M'
+alias ls='ls -h --color --time-style=long-iso --block-size=M'
 alias l='ls -l'
 alias ll='ls -lA'
 alias lt='ls -lt'
