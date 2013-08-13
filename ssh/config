@@ -34,3 +34,7 @@ Host is! schroeder!
 Host sol
   HostName sol
   User admin
+
+Host 10.185.5.* rde-* app-qa-* app-live-* db-live-*
+  ProxyCommand ssh -W %h:%p access-live-049.lhotse.ov.otto.de
+
