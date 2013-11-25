@@ -5,11 +5,11 @@ plugins=(git bundler mercurial ruby rvm rails3 gem cap osx brew)
 
 export EDITOR='subl -w'
 
-source ~/.paths
 source $ZSH/oh-my-zsh.sh
 source ~/.aliases
 source ~/.completions
 source ~/.functions
+source ~/.paths
 
 # autocorrect is more annoying than helpful
 unsetopt correct_all
