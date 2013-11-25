@@ -17,3 +17,13 @@ compdef _ocd ocd
 h() { cd ~/$1; }
 _h() { _files -W ~/ -/; }
 compdef _h h
+
+# movies dir
+m() { cd ~/$1; }
+_m() { _files -W ~/Movies -/; }
+compdef _m m
+
+# movies dir
+mm() { cd ~/$1; }
+_mm() { _files -W ~/Movies/MOVIES -/; }
+compdef _mm mm
