@@ -1,6 +1,6 @@
-Host pi rasp raspberry raspbmc
-  HostName raspbmc
-  User pi
+Host pi rasp raspberry raspbmc openelec
+  HostName pi
+  User root
   ForwardAgent yes
   CheckHostIP false
 
@@ -36,5 +36,5 @@ Host sol
   User admin
 
 Host 10.185.5.* rde-* app-qa-* app-live-* db-live-*
-  ProxyCommand ssh -W %h:%p access-live-049.lhotse.ov.otto.de
+  ProxyCommand ssh -A -W %h:%p access-live-049.lhotse.ov.otto.de
 
