@@ -1,5 +1,11 @@
-Host pi rasp raspberry raspbmc openelec
+Host pi rasp raspberry raspberrypi
   HostName pi
+  User pi
+  ForwardAgent yes
+  CheckHostIP false
+
+Host xbmc raspbmc openelec
+  HostName xbmc
   User root
   ForwardAgent yes
   CheckHostIP false
