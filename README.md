@@ -19,6 +19,13 @@ After installing, open a new terminal window to see the effects.
 
 Feel free to customize the .zshrc file to match your preference.
 
+### Sensible OS X defaults
+
+When setting up a new Mac, you may want to set some sensible OS X defaults:
+
+```terminal
+./.osx
+```
 
 ## Features
 
