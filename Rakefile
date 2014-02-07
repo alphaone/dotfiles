@@ -7,7 +7,7 @@ task :install do
   switch_to_zsh
   replace_all = false
   files = Dir['*'] - %w[Rakefile README.md LICENSE oh-my-zsh ssh hg-prompt]
-  non_dot_files = %w[Brewfile]
+  non_dot_files = %w[Brewfile Caskfile]
   files << Dir['oh-my-zsh/custom/*']
   files << Dir['ssh/*']
   files.flatten.each do |filename|
