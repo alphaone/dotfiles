@@ -13,7 +13,6 @@ cask install cloudapp
 cask install concentrate
 cask install dropbox
 cask install firefox
-cask install flux
 cask install handbrake
 cask install google-chrome
 cask install imageoptim
@@ -22,7 +21,6 @@ cask install iterm2
 cask install libreoffice
 cask install intellij-idea-ultimate
 cask install mkvtoolnix
-cask install jdownloader
 cask install mactracker
 cask install namechanger
 cask install path-finder
@@ -46,3 +44,7 @@ cask install vlc
 # cask install marked
 # cask install moom
 # cask install the-unarchiver
+
+# does not work nicely
+
+# cask install jdownloader

@@ -27,6 +27,7 @@ install ack
 install git
 install tree
 install ctags
+install osxfuse
 
 install mongodb
 install selenium-server-standalone
