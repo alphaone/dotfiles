@@ -22,6 +22,7 @@ cask install libreoffice
 cask install intellij-idea-ultimate
 cask install mkvtoolnix
 cask install mactracker
+cask install mysql-workbench
 cask install namechanger
 cask install path-finder
 cask install onepassword

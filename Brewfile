@@ -29,6 +29,7 @@ install tree
 install ctags
 install osxfuse
 
+install mysql
 install mongodb
 install selenium-server-standalone
 install chromedriver
