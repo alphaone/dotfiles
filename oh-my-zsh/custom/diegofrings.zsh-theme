@@ -18,16 +18,17 @@ eval branch_color='$FG[075]'
 eval dirty_color='$FG[214]'
 eval line_color='$FG[237]'
 eval base_color='$FG[032]'
+eval rvm_color='$FG[156]'
 
 # primary prompt
 PROMPT='$line_color------------------------------------------------------------%{$reset_color%}
 $base_color%~\
-$(hg_prompt_info)$(git_prompt_info)
+$(git_prompt_info) %{$rvm_color%}$(rvm_prompt)%{$reset_color%}
 $FG[105]%(!.#.$(prompt_char))%{$reset_color%} '
 
-PROMPT2='%{$fg[red]%}\ %{$reset_color%}'
+#PROMPT2='%{$fg[red]%}\ %{$reset_color%}'
 
-RPS1='${return_code}'
+#RPS1='${return_code}'
 
 
 
@@ -49,4 +50,8 @@ function prompt_char {
 
 function hg_prompt_info {
     hg prompt --angle-brackets "< on %{$branch_color%}<branch>%{$reset_color%}><%{$base_color%} at %{$branch_color%}<tags|%{$reset_color%}, %{$branch_color%}>%{$reset_color%}>%{$dirty_color%}<status|modified|unknown><update>%{$reset_color%}<patches: <patches|join( → )|pre_applied(%{$branch_color%})|post_applied(%{$reset_color%})|pre_unapplied(%{$fg_bold[black]%})|post_unapplied(%{$reset_color%})>>" 2>/dev/null
+}
+
+function rvm_prompt {
+    rvm current
 }

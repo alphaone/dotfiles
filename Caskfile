@@ -14,26 +14,28 @@ cask install concentrate
 cask install dropbox
 cask install firefox
 cask install handbrake
-cask install google-chrome
 cask install imageoptim
 cask install instacast
-cask install iterm2
+# cask install iterm2
 cask install libreoffice
 cask install intellij-idea-ultimate
 cask install mkvtoolnix
 cask install mactracker
-cask install mysql-workbench
+cask install mysqlworkbench
 cask install namechanger
-cask install path-finder
-cask install onepassword
+# cask install path-finder
+# cask install onepassword
 cask install screenhero
-cask install skype
+# cask install skype
 cask install soulver
 cask install sublime-text
 cask install tinkertool
 cask install transmission
 cask install tunnelblick
 cask install vlc
+
+cask install virtualbox
+cask install vagrant
 
 # AppStore Stuff:
 
@@ -49,3 +51,4 @@ cask install vlc
 # does not work nicely
 
 # cask install jdownloader
+# cask install google-chrome

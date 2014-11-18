@@ -9,6 +9,7 @@ source $ZSH/oh-my-zsh.sh
 source ~/.aliases
 source ~/.completions
 source ~/.functions
+source ~/.java_paths
 source ~/.paths
 
 # autocorrect is more annoying than helpful
@@ -19,4 +20,3 @@ unsetopt correct_all
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
 __rvm_project_rvmrc
-

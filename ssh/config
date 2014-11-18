@@ -5,7 +5,7 @@ Host pi rasp raspberry raspberrypi
   CheckHostIP false
 
 Host xbmc raspbmc openelec
-  HostName xbmc
+  HostName openelec
   User root
   ForwardAgent yes
   CheckHostIP false
@@ -34,6 +34,11 @@ Host is schroeder
 
 Host is! schroeder!
   HostName schroeder.inoxio.de
+  User root
+  ForwardAgent yes
+
+Host it! trusty! trustytahr
+  HostName trustytahr.inoxio.de
   User root
   ForwardAgent yes
 
