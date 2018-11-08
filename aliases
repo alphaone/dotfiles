@@ -11,3 +11,19 @@ alias gup='git smart-pull'
 alias gm='git smart-merge'
 alias gl='git smart-log'
 
+# SVN
+alias sst='svn status'
+alias sup='svn update'
+alias sci='svn commit'
+alias sadd='svn add . --force'
+alias sl='svn log -l10|less'
+
+alias grep="ggrep"
+
+# BUNDLER
+
+alias bi='bundle install --path=vendor/bundle'
+
+# DOCKER
+alias d='docker'
+alias dc='docker-compose'
