@@ -1,51 +1,21 @@
-Host pi rasp raspberry raspberrypi
-  HostName pi
-  User pi
-  ForwardAgent yes
-  CheckHostIP false
+Host gitlab.inoxio.de
+  Port 2222
 
-Host xbmc raspbmc openelec
-  HostName openelec
-  User root
-  ForwardAgent yes
-  CheckHostIP false
+Host github.com
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_rsa
 
-Host ds snoopy
-  HostName datenschleuder.org
-  ForwardAgent yes
-
-Host ds! snoopy!
-  HostName datenschleuder.org
-  User root
-  ForwardAgent yes
-
-Host iw woodstock
-  HostName woodstock.inoxio.de
-  ForwardAgent yes
-
-Host iw! woodstock!
-  HostName woodstock.inoxio.de
-  User root
-  ForwardAgent yes
-
-Host is schroeder
-  HostName schroeder.inoxio.de
-  ForwardAgent yes
-
-Host is! schroeder!
-  HostName schroeder.inoxio.de
-  User root
-  ForwardAgent yes
-
-Host it! trusty! trustytahr
-  HostName trustytahr.inoxio.de
-  User root
-  ForwardAgent yes
+Host otto-github.com
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_rsa_otto_github
 
 Host sol
   HostName sol
   User admin
 
-Host 10.185.5.* rde-* app-qa-* app-live-* db-live-*
-  ProxyCommand ssh -A -W %h:%p access-live-049.lhotse.ov.otto.de
+Host dh
+  HostName ec2-18-197-57-199.eu-central-1.compute.amazonaws.com
+  User ec2-user
 
