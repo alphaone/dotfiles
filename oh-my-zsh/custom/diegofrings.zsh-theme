@@ -8,8 +8,6 @@
 # Created on:   June 19, 2012
 # Last modified on: June 20, 2012
 
-
-
 if [ $UID -eq 0 ]; then NCOLOR="red"; else NCOLOR="green"; fi
 local return_code="%(?..%{$fg[red]%}%? ↵%{$reset_color%})"
 
@@ -23,7 +21,9 @@ eval rvm_color='$FG[156]'
 # primary prompt
 PROMPT='$line_color------------------------------------------------------------%{$reset_color%}
 $base_color%~\
-$(git_prompt_info) %{$rvm_color%}$(rvm_prompt)%{$reset_color%}
+$(git_prompt_info) \
+$FG[164]$(aws_profile)%{$reset_color%} \
+%{$rvm_color%}$(rvm_prompt)%{$reset_color%}
 $FG[105]%(!.#.$(prompt_char))%{$reset_color%} '
 
 #PROMPT2='%{$fg[red]%}\ %{$reset_color%}'
@@ -53,5 +53,9 @@ function hg_prompt_info {
 }
 
 function rvm_prompt {
-    rvm current
+    echo "$(rbenv version | sed -e "s/ (set.*$//")"
+}
+
+function aws_profile {
+    echo "[$AWS_PROFILE]"
 }
