@@ -1,0 +1,22 @@
+# swamp aliases for tesla
+default_args="-mfa-device arn:aws:iam::027617375449:mfa/tmangner "
+default_args+="-mfa-exec \"oath.sh\" "
+default_args+="-export-profile "
+default_args+="-export-file /tmp/current_swamp_profile "
+default_args+="&& source /tmp/current_swamp_profile "
+
+alias swamp-live-developer="swamp -account 978096013924 -target-profile tesla-live-developer -target-role developer ${default_args}" 
+alias swamp-live-admin="swamp -account 978096013924 -target-profile tesla-live-admin -target-role admin ${default_args}" 
+
+alias swamp-nonlive-developer="swamp -account 755995982025 -target-profile tesla-nonlive-developer -target-role developer ${default_args}"
+alias swamp-nonlive-admin="swamp -account 755995982025 -target-profile tesla-nonlive-admin -target-role admin ${default_args}"
+
+alias swamp-infrastructure-developer="swamp -account 526703851656 -target-profile tesla-infrastructure-developer -target-role developer ${default_args}"
+alias swamp-infrastructure-admin="swamp -account 526703851656 -target-profile tesla-infrastructure-admin -target-role admin ${default_args}"
+
+alias swamp-pipeline="swamp -account 526703851656 -target-profile tesla-pipeline -target-role pipeline ${default_args}"
+
+alias swamp-inoxio-mailtresor"swamp -account 831369397517 -target-profile inoxio-mailtresor  -target-role mailtresor"
+
+export AWS_REGION=eu-central-1
+
