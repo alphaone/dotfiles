@@ -3,7 +3,7 @@ ZSH_THEME="diegofrings"
 
 plugins=(git osx brew docker docker-compose)
 
-export EDITOR='subl -w'
+export EDITOR='vim'
 
 source $ZSH/oh-my-zsh.sh
 source ~/.aliases
