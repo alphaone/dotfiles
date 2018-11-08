@@ -8,10 +8,10 @@ cr() { cd ~/code/rails/$1; }
 _cr() { _files -W ~/code/rails -/; }
 compdef _cr cr
 
-# lhotse dir
-ocd() { cd ~/code/java/$1; }
-_ocd() { _files -W ~/code/java -/; }
-compdef _ocd ocd
+# tesla dir
+ct() { cd ~/code/otto/tesla/$1; }
+_ct() { _files -W ~/code/otto/tesla/ -/; }
+compdef _ct ct
 
 # home dir
 h() { cd ~/$1; }
