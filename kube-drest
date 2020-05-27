@@ -1,0 +1,15 @@
+# kube drest
+export KUBECONFIG=$KUBECONFIG:~/.kube/config-appnest-staging
+export KUBECONFIG=$KUBECONFIG:~/.kube/config-appnest-uat
+export KUBECONFIG=$KUBECONFIG:~/.kube/config-appnest-prod
+
+alias kube_staging="kubectl config use-context arn:aws:eks:eu-west-1:962488300184:cluster/nest_eks_staging_EMLWHs2W"
+alias kube_uat="kubectl config use-context arn:aws:eks:eu-west-1:393843653811:cluster/nest_eks_uat_DBXmHIsd"
+alias kube_prod="kubectl config use-context arn:aws:eks:eu-west-1:189526021186:cluster/nest_eks_prod_JxEEU08Y"
+
+# print most frequently used commands
+function kube_exec() {
+  POD_NAME=$(kubectl get pods -n nest-api -l app=nest-api --sort-by=.metadata.creationTimestamp | tail -1 | awk '{ print $1}')
+  echo "Connecting to Pod: $POD_NAME"
+  kubectl exec -it $POD_NAME -n nest-api -c nest-api $@
+}
